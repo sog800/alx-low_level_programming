@@ -11,9 +11,9 @@ int main(void)
 	char ch = 'a';
 
 	do {
-		putchar(ch);
+		putchar(c);
 		ch++;
 	} while (ch <= 'z');
-	putchar("\n");
+	
 	return (0);
 }
