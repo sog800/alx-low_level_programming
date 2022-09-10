@@ -1,22 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints aphabet exept q and e
  *
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char x;
+	int x = 0;
 
 	for (x = 'a'; x <= 'z'; x++)
 	{
 		if (x == 'e')
-			for (x = 'f'; x <= 'p'; x++)
-				
-				
-				putchar(x);
-			
+			x = 'f';
+		if (x == 'q')
+			x = 'r';
+		putchar(x);
 	}
 	putchar('\n');
 	return (0);
