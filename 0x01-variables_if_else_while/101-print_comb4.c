@@ -33,7 +33,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				g++;	
+				g++;
 			}
 			i++;
 		}
@@ -41,4 +41,4 @@ int main(void)
 	}
 	putchar('\n');
 	return (0);
-}
+
