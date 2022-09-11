@@ -18,8 +18,8 @@ int main(void)
 		i = 48;
 		while (i < 58)
 		{
-			g = 49;
-			while (i < 58)
+			g = 48;
+			while (g < 58)
 			{
 				if (e != i && e != g && i != g && e < i && i < g)
 				{
