@@ -7,15 +7,21 @@
  */
 int main(void)
 {
-	int x = 0;
+	int i = 48;
 
-	for (x = 0; x <= 10; x++)
+	while (i < 58)
 	{
-		putchar(x);
-		putchar(',');
-		if (x == 9)
-			break;
-		putchar(' ');
+		putchar(i);
+		if (i != 58)
+		{
+			putchar(44);
+			putchar(32);
+			i++;
+		}
+		else
+		{
+			i++;
+		}
 	}
 	putchar('\n');
 	return (0);
