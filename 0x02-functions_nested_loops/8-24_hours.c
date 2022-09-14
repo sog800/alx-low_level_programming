@@ -12,7 +12,7 @@ void jack_bauer(void)
 	int y = 0;
 	int x = 0;
 
-	for (x = 0; x <= 24; x++)
+	for (x = 0; x < 24; x++)
 	{
 		for (y = 0; y < 60; y++)
 		{
@@ -33,8 +33,8 @@ void jack_bauer(void)
 			}
 			_putchar('\n');
 		}
-		if (m == 5 && n == 9)
-			break;
+		m = 0;
+		n = 0;
 		b++;
 		if (b == 10)
 		{
