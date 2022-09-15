@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * print_numbers - printing numbers
@@ -11,10 +10,7 @@ void print_numbers(void)
 
 	for (x = 0; x <= 9; x++)
 	{
-		if (X / 10)
-			print(x / 10);
-		_putchar(n % 10 + '0');
+		_putchar(x + '0');
 	}
-	print(x);
 }
 
