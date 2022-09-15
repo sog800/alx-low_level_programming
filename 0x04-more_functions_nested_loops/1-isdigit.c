@@ -4,7 +4,8 @@
 /**
  * _isdigit - check for digit
  * @c: if c is digit
- * Retain: 1 for success 0therwise 0
+ *
+ * Return: Always retun 1 success 0 otherwise
  */
 
 int _isdigit(int c)
