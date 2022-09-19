@@ -3,8 +3,11 @@
 #include<unistd.h>
 
 /**
- * puts - printing to output
+ * _puts - printing to output
  * @str: sring to be out puted
+ *
+ * Description: printing a string
+ * to the standard output
  */
 
 void _puts(char *str)
@@ -12,6 +15,6 @@ void _puts(char *str)
 	int num;
 
 	num = strlen(str);
-	write(1,str,num);
+	write(1, str, num);
 	_putchar('\n');
 }
