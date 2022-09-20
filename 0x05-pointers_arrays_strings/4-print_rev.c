@@ -9,12 +9,21 @@
 void print_rev(char *s)
 {
 	int len, x;
-
-	x = 0;
+	char *begin_ptr, *end_ptr, ch;
+	
 	len = strlen(s);
-	while (x < len)
+	begin_ptr = s;
+	end_ptr = s;
+
+	for (x = 0; x < len - 1; x++)
+		end_ptr++;
+	for (x = 0; x < len / 2; x++)
 	{
-		s++;
-		x++;
+		ch = *end_ptr
+		*end_ptr = *begin_ptr;
+		*begin_ptr = ch;
+		begin_ptr++;
+		end_ptr--;
 	}
+
 }

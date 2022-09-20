@@ -8,16 +8,22 @@
 void puts2(char *str)
 {
 	int x;
-	char y;
-	int l;
-	char p,
+	char *y;
+	int len;
 
-	l = strlen(str);
-	for (x = 0; x < len; x++)
+	len = strlen(str);
+	for (x = 0; x < len / 2; x++)
 	{
-		p = *(str + x + x);
-		y = *p;
-		_putchar(y);
+		if (x == 0)
+		{
+			y = str += x;
+			_putchar(*y);
+		}
+		else
+		{
+			y = str += 2;
+			_putchar(*y);
+		}
 	}
 	_putchar('\n');
 }
