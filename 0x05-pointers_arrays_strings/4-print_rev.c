@@ -1,6 +1,5 @@
 #include "main.h"
 #include <string.h>
-#include <unistd.h>
 
 /**
  * print_rev - printing in reversed
@@ -9,28 +8,13 @@
 
 void print_rev(char *s)
 {
-	int x, len;
-	char end, begin;
-	char *begin_ptr, *end_ptr, ch;
+	int len, x;
 
-	begin_ptr = &begin;
-	end_ptr = &end;
+	x = 0;
 	len = strlen(s);
-	begin_ptr = s;
-	end_ptr = s;
-
-	for (x = 0; x < len - 1; x++)
+	while (x < len)
 	{
-		end_ptr++;
+		s++;
+		x++;
 	}
-	for (x = 0; x < len - 1; x++)
-	{
-		ch = end;
-		end = begin;
-		begin = ch;
-		begin_ptr++;
-		end_ptr--;
-		_putchar(begin);
-	}
-	_putchar('\n');
 }
