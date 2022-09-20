@@ -16,7 +16,7 @@ void puts2(char *str)
 	{
 		if (x == 0)
 		{
-			y = str += x;
+			y = str;
 			_putchar(*y);
 		}
 		else
