@@ -25,5 +25,7 @@ void puts2(char *str)
 			_putchar(*y);
 		}
 	}
+	if (len > 17)
+		_putchar('.');
 	_putchar('\n');
 }
