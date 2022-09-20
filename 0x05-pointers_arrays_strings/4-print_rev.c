@@ -19,11 +19,11 @@ void print_rev(char *s)
 	begin_ptr = s;
 	end_ptr = s;
 
-	for (x = 0; x < len/2; x++)
+	for (x = 0; x < len - 1; x++)
 	{
 		end_ptr++;
 	}
-	for (x = 0; x < len/2; x++)
+	for (x = 0; x < len - 1; x++)
 	{
 		ch = end;
 		end = begin;
