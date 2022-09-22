@@ -1,4 +1,4 @@
-int _putchar(char c);
+
 char *_strcat(char *dest, char *src);
 char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
@@ -7,3 +7,4 @@ void print_array(int *a, int n);
 void reverse_array(int *a, int n);
 void print(int *n);
 char *string_toupper(char *);
+int _putchar(char c);

@@ -30,7 +30,7 @@ void reverse_array(int *a, int n)
 
 void print(int *n)
 {
-	if (*n /10)
+	if (*n / 10)
 	{
 		_putchar((*n / 10) + '0');
 	}
