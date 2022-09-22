@@ -6,7 +6,7 @@
  * string_toupper - changing to upper case
  * @str: to be  changed
  *
- * Return: Always a pointer 
+ * Return: Always a pointer
  */
 char *string_toupper(char *str)
 {
