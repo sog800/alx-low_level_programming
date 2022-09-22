@@ -9,3 +9,4 @@ void print(int *n);
 char *string_toupper(char *);
 int _putchar(char c);
 char *cap_string(char *);
+char *leet(char *);
