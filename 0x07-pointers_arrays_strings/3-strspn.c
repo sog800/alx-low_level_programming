@@ -31,9 +31,13 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 		if (!found)
+		{
 			break;
+		}
 		else
+		{
 			ilen++;
+		}
 	}
 	return (ilen);
 }
