@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _memset - memset
@@ -20,6 +21,7 @@ char *_memset(char *s, char b, unsigned int n)
 			{
 				s[x] = b;
 				x++;
+				printf("%d", s[x]);
 			}
 		}
 		else
