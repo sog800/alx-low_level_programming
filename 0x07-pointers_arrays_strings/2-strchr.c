@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stddef.h>
-#include <stdio.h>
+
 /**
- * _strchr -strchr
+ * _strchr - strchr
  * @s: string
- * @c: character to be loated
+ * @c: character
  *
- * Return: a pointer to c
+ * Return: a pointe
  */
 char *_strchr(char *s, char c)
 {
