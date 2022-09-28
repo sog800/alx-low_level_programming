@@ -48,20 +48,25 @@ int wildcmp(char *s1, char *s2)
  */
 char *string2(char *s)
 {
-	int x;
-	int l2;
+	int x = 0;
 
-	l2 = strlen(s);
-	for (x = 0; x < l2; x++)
+	if (s[x] == '\0')
+	{
+		return (0);
+	}
+	else
 	{
 		if (s[x] == '*')
 		{
 			memmove(&s[x], &s[x + 1], strlen(s) - x);
+			x++;
 		}
 		else
 		{
 			s[x] = s[x];
+			x++;
 		}
+		string2(s);
 	}
 	return (s);
 }
