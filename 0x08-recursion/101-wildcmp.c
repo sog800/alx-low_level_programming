@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+#include <stdio.h>
 char *string2(char *s);
 /**
  * wildcmp - comparing strings
@@ -17,6 +18,7 @@ int wildcmp(char *s1, char *s2)
 	if (!(s2[0] == '*' && s2[l2 - 1] == s1[l1 - 1]))
 	{
 		string2(s2);
+		printf("%s\n", s2);
 		if (s1[0] == s2[0] && s1[l1 - 1] == s2[l2 - 1])
 		{
 			return (1);
