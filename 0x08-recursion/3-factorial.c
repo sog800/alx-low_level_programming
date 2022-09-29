@@ -2,7 +2,7 @@
 
 /**
  * factorial - factorial
- * n: numberr
+ * @n: numberr
  *
  * Return: factorial
  */
