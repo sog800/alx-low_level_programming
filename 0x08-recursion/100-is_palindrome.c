@@ -31,9 +31,14 @@ int is_palindrome(char *s)
  */
 char *reverse(char *s)
 {
+	char temp;
+
 	if (*s != '\0')
 	{
 		reverse(s + 1);
+		temp = *s;
+		*s = s[0];
+		s[0] = temp;
 	}
 	return (s);
 }
