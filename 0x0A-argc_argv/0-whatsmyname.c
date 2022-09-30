@@ -3,10 +3,11 @@
 /**
  * main - printing first argument
  * @argv: arguments
+ * @argc: argument
  *
  * Return: Always return 0 for success
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	(void)argc;
 
