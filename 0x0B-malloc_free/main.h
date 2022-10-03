@@ -4,4 +4,5 @@ int _putchar(char c);
 #include <stdio.h>
 #include <stddef.h>
 #include <stdlib.h>
+char *_strdup(char *str);
 
