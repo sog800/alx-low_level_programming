@@ -20,13 +20,16 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	dup_offset = dup;
-	while (*str)
+	else
 	{
-		*dup_offset = *str;
-		dup_offset++;
-		str++;
+		dup_offset = dup;
+		while (*str)
+		{
+			*dup_offset = *str;
+			dup_offset++;
+			str++;
+		}
+		*dup_offset = '\0';
+		return (dup);
 	}
-	*dup_offset = '\0';
-	return (dup);
 }
