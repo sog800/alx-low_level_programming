@@ -10,19 +10,19 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int str_len, x;
-	char *rtn_ptr;
+	char *p, *q, *rtn;
 
-	strcat(s1, s2);
-	str_len = strlen(s1);
-	rtn_ptr = (char *)malloc(sizeof(char) * str_len);
-	if (rtn_ptr == NULL)
+	rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
+	if (rtn == NULL)
 	{
 		return (NULL);
 	}
-	for (x = 0; x < str_len; x++)
+	for (p = s1; (*q = *p) != '\0'; ++p, ++q)
 	{
-		rtn_ptr[x] = s1[x];
 	}
-	return (rtn_ptr);
+	for (p = s2; (*q = *p) != '\0'; ++p, ++q)
+	{
+	}
+
+	return (rtn);
 }
