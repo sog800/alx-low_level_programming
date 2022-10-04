@@ -12,17 +12,33 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p, *q, *rtn;
 
-	rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
-	if (rtn == NULL)
+	if (s1 == NULL && s2 != NULL)
 	{
-		return (NULL);
+		return (s2);
 	}
-	for (p = s1; (*q = *p) != '\0'; ++p, ++q)
+	else if (s2 == NULL && s1 != NULL)
 	{
+		return (s1);
 	}
-	for (p = s2; (*q = *p) != '\0'; ++p, ++q)
+	else if (s2 == NULL && s1 == NULL)
 	{
+		s1 = "  ";
+		return (s1);
 	}
+	else
+	{
+		rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
+		if (rtn == NULL)
+		{
+			return (NULL);
+		}
+		for (p = s1; (*q = *p) != '\0'; ++p, ++q)
+		{
+		}
+		for (p = s2; (*q = *p) != '\0'; ++p, ++q)
+		{
+		}
 
-	return (rtn);
+		return (rtn);
+	}
 }
