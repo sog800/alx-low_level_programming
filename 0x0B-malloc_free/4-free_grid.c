@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * void free_grid - free
+ * free_grid - free
  * @grid: array
  * @height: height
  */
