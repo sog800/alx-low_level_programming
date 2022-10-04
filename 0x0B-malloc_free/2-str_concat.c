@@ -14,31 +14,29 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 != NULL)
 	{
-		return (s2);
+		s1 = '\0';
 	}
 	else if (s2 == NULL && s1 != NULL)
 	{
-		return (s1);
+		s2 = '\0';
 	}
 	else if (s2 == NULL && s1 == NULL)
 	{
-		s1 = "  ";
-		return (s1);
+		s1 = '\0';
+		s2 = '\0';
 	}
-	else
+	rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
+	if (rtn == NULL)
 	{
-		rtn = q = malloc(strlen(s1) + strlen(s2) + 1);
-		if (rtn == NULL)
-		{
-			return (NULL);
-		}
-		for (p = s1; (*q = *p) != '\0'; ++p, ++q)
-		{
-		}
-		for (p = s2; (*q = *p) != '\0'; ++p, ++q)
-		{
-		}
-
-		return (rtn);
+		return (NULL);
 	}
+	for (p = s1; (*q = *p) != '\0'; ++p, ++q)
+	{
+	}
+	for (p = s2; (*q = *p) != '\0'; ++p, ++q)
+	{
+	}
+
+	return (rtn);
+
 }
