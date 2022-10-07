@@ -26,7 +26,7 @@ int *array_range(int min, int max)
 		}
 		else
 		{
-			for (x = 0; x < max + 1; x++)
+			for (x = 0; x <= max; x++)
 			{
 				p[x] = min;
 				min++;
