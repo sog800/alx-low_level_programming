@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * array_range - range of an array
@@ -19,7 +20,7 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		p = (int *)malloc(sizeof(int) * max + 1);
+		p = (int *)malloc(sizeof(int) * max + 2);
 		if (p == NULL)
 		{
 			return (NULL);
