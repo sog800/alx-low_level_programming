@@ -20,14 +20,14 @@ int *array_range(int min, int max)
 	}
 	else
 	{
-		p = (int *)malloc(sizeof(int) * max + 2);
+		p = (int *)malloc(sizeof(int) * max);
 		if (p == NULL)
 		{
 			return (NULL);
 		}
 		else
 		{
-			for (x = 0; x <= max; x++)
+			for (x = 0; x < max; x++)
 			{
 				p[x] = min;
 				min++;
