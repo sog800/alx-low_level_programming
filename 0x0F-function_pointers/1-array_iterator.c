@@ -1,6 +1,6 @@
 #include "function_pointers.h"
 #include <stdlib.h>
-#include <stddef.h> 
+#include <stddef.h>
 /**
  * array_iterator - iterator
  * @array: array
@@ -10,7 +10,7 @@
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t x;
-	
+
 	if (action == NULL)
 	{
 		exit(1);
