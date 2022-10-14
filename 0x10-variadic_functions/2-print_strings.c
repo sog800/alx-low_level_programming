@@ -11,13 +11,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 	unsigned int i;
+	char *p;
 
 	va_start(ap, n);
 	if (separator == NULL)
 	{
 		for (i = 0; i < n; i++)
 		{
-			if (va_arg(ap, char *) == NULL)
+			p = va_arg(ap, char *);
+			if (p == NULL)
 			{
 				printf("(null)");
 			}
@@ -31,7 +33,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		for (i = 0; i < n; i++)
 		{
-			if (va_arg(ap, char *) == NULL)
+			p = va_arg(ap, char *);
+			if (p == NULL)
 			{
 				printf("(null)%s", separator);
 			}
