@@ -1,19 +1,15 @@
-global _start
-section .text
+section .texti
 
-_start:
-	#write system call
-	mov x8, #64
-	mov x0, #1
-	ldr x1, =massage
-	mov x2, #16
-	svc 0
-	
-	# exit system call
-	mov x8, #0x5d
-	mov x0, #0x41
-	svc 0
+global _start:
+	mov edx, len
+	mov ecx, msg
+	mov ebx, 1
+	mov eax, 4
+	int 0x80
+
+	mov eax, 1
+	int 0x080
 
 section .data
-	massage:
-	.ascii "Hello, Holberton"
+	msg db "Hello, Holberton",10
+	len equ $ -msg
