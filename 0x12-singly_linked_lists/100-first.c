@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * myStartup - print before main
+ * myStartupFun - print before main
  */
 void myStartupFun(void) __attribute__ ((constructor));
 
