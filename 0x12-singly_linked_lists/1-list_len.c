@@ -12,7 +12,10 @@ size_t list_len(const list_t *h)
 	const list_t *ptr;
 
 	if (h == NULL)
-		exit(1);
+	{
+		count = 0;
+		return (count);
+	}
 	ptr = h;
 	count = 0;
 	while (ptr != NULL)
