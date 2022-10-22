@@ -5,28 +5,31 @@
  * @d: struct pointer
  */
 void print_dog(struct dog *d)
-{	
+{
+	struct dog *s;
+
 	if (d == NULL)
 	{
 		exit(0);
 	}
 	else
 	{
-		if (d->name == NULL && d->owner != NULL)
+		s = d;
+		if (s->name == NULL && s->owner != NULL)
 		{
-			printf("Name: (nil)\nAge: %.1f\nOwner: %s\n", d->age, d->owner);
+			printf("Name: (nil)\nAge: %.1f\nOwner: %s\n", s->age, s->owner);
 		}
-		else if (d->name == NULL && d->owner == NULL)
+		else if (s->name == NULL && s->owner == NULL)
 		{
-			printf("Name: (nil)\nAge: %.1f\nOwner: (nil)", d->age);
+			printf("Name: (nil)\nAge: %.1f\nOwner: (nil)", s->age);
 		}
-		else if (d->name != NULL && d->owner == NULL)
+		else if (s->name != NULL && s->owner == NULL)
 		{
-			printf("Name: %s\nAge: %.1f\nOwner: (nil)\n", d->name, d->age);
+			printf("Name: %s\nAge: %.1f\nOwner: (nil)\n", s->name, s->age);
 		}
 		else
 		{
-			printf("Name: %s\nAge: %.1f\nOwner: %s\n", d->name, d->age, d->owner);
+			printf("Name: %s\nAge: %.1f\nOwner: %s\n", s->name, s->age, s->owner);
 		}
 	}
 }
