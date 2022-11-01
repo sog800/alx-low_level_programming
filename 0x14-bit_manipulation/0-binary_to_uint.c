@@ -17,13 +17,13 @@ unsigned int binary_to_uint(const char *b)
 	decval = 1;
 	if (b == NULL)
 		return (0);
-	for (i = (len -1); i >= 0; i--)
+	for (i = (len - 1); i >= 0; i--)
 	{
 		if (b[i] != '1' && b[i] != '0')
 		{
 			total = 0;
 			return (total);
-			exit (0);
+			exit(0);
 		}
 	}
 	for (i = (len - 1); i >= 0; i--)
