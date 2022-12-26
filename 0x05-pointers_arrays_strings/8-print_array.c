@@ -1,21 +1,23 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * print_array - print array
- * @*a: an array
+ * @a: an array
  * @n: elements of the array
  */
 void print_array(int *a, int n)
 {
-	int len;
-	int *aptr;
-	len = 2;
-	n = 0;
-	while (n <= len)
+	int x;
+
+	if (a == NULL)
 	{
-		printf("%d, ", *a);
-		a++;
-		n++;
+		exit(1);
 	}
+	for (x = 0; x < n; x++)
+	{
+		printf("%d, ", a[x]);
+	}
+	printf("\n");
 }
